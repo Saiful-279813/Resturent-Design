@@ -1,0 +1,45 @@
+/* section title */
+.section-title{
+    @include min-sm{
+        padding-bottom: 30px;
+    }
+    span{
+        display: block;
+        font-family: 'Oleo Script', cursive;
+        text-transform: lowercase;
+        font-size: 22px;
+        @include min-sm{
+            font-size: 18px;
+        }
+    }
+    h4{
+        @include min-sm{
+            font-size: 28px;
+            font-weight: 900;
+            margin-top: 0;
+            padding-bottom: 10px;
+        }
+        text-transform: capitalize;
+        font-size: 40px;
+        margin-top: 10px;
+        display: inline-block;
+        padding-bottom: 20px;
+        position: relative;
+        &:after,&:before{
+            position: absolute;
+            content: "";
+            height: 2px;
+            background-color: #ff3636;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &:before{
+            width: 90px;
+            bottom: 0px;
+        }
+        &:after{
+            width: 45px;
+            bottom: -10px;
+        }
+    }
+} 

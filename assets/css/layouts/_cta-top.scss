@@ -1,0 +1,46 @@
+/* top cta part */
+.top-cta-area{
+    padding: 50px 0px 40px;
+    .section-title{
+        color: $white;
+        span{
+            display: inline;
+            font-size: 50px;
+            font-weight: 900;
+            color: #ff3636;
+            text-transform: uppercase;
+            @include min-sm{
+                font-size: 22px;
+            }
+            @include min-md{
+                font-size: 34px;
+            }
+            @include min-lg{
+                font-size: 38px;
+            }
+            @include min-xl{
+                font-size: 40px;
+            }
+        }
+        h4{
+            font-size: 55px;
+            margin-top: 20px;
+            padding-bottom: 25px;
+            @include min-sm{
+                font-size: 22px;
+            }
+            @include min-md{
+                font-size: 34px;
+            }
+            @include min-lg{
+                font-size: 38px;
+            }
+            @include min-xl{
+                font-size: 40px;
+            }
+            span{
+                display: inline;
+            }
+        }
+    }
+} 

@@ -1,0 +1,96 @@
+.about-area{
+    @include min-md{
+        padding-bottom: 130px;
+    }
+    @include min-sm{
+        padding: 50px 0px;
+    }
+    .about-content{
+        p{
+            margin-bottom: 30px;
+        }
+        a{
+
+        }
+    }
+    .about-image{
+        position: relative;
+        @include min-sm{
+            display: flex;
+        }
+        img{
+            border: 1px solid $gray;
+            &:nth-child(1){
+                width: 450px;
+                @include min-sm{
+                    width: 100%;
+                    margin-right: 10px;
+                }
+            }
+            &:nth-child(2){
+                @include min-lg{
+                    max-width: 400px;
+                    bottom: -50px;
+                    right: 200px;
+                }
+                @include min-sm{
+                    position: inherit;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    margin-left: 10px;
+                }
+                position: absolute;
+                right: 80px;
+                max-width: 370px;
+                bottom: -80px;
+            }
+        }
+    }
+}
+// about page style
+.about-page-about-area{
+    padding: 50px 0px;
+    .about-second{
+        @include min-sm{
+            margin-top: 0 !important;
+        }
+    }
+    .about-image{
+        img{
+            border: 1px solid #ddd;
+            padding: 3px;
+            min-height: 276px;
+        }
+    }
+    .about-content{
+        p{
+            margin-bottom: 20px;
+        }
+    }
+}
+.about-title{
+    margin-top: 20px;
+    h4{
+        font-size: 24px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        text-transform: capitalize;
+        position: relative;
+        margin-bottom: 30px;
+        &:after, &:before{
+            position: absolute;
+            content: "";
+            width: 75px;
+            height: 2px;
+            background: #ff3636;
+            left: 0;
+            bottom: 0;
+            left: 0;
+        }
+        &:before{
+            width: 40px;
+            bottom: -5px;
+        }
+    }
+}

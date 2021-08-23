@@ -1,0 +1,50 @@
+/* menu part */
+.menu-part{
+    background-color: $bg_gray;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    @include min-sm{
+        padding: 50px 0px 20px;
+    }
+    .sigle-menu{
+        display: flex;
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-bottom: 30px;
+        &:hover{
+            img{
+                border-radius: 50%;
+            }
+        }
+        img{
+            @include min-lg{
+                max-width: 70px;
+                max-height: 70px;
+                margin-top: 7px;
+            }
+            max-width: 100px;
+            margin-right: 20px;
+            transition: all ease .3s;
+        }
+        .menu-content{
+            h4{
+                @include min-lg{
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                    padding-bottom: 5px;
+                }
+                font-size: 22px;
+                border-bottom: 1px dashed #ddd;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                span{
+                    float: right;
+                    color: #ff3636;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+} 

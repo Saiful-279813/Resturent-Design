@@ -1,0 +1,111 @@
+@import 'variable';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+    width: 100%;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    transition: all ease .3s;
+    color: $black;
+}
+/* margin & padding */
+@for $i from 1 through 12 {
+    .pt-#{$i * 10}{
+        padding-top: $i * 10px;
+    }
+    .pb-#{$i * 10}{
+        padding-bottom: $i * 10px;
+    }
+    .mt-#{$i * 10}{
+        margin-top: $i * 10px;
+    }
+    .mb-#{$i * 10}{
+        margin-bottom: $i * 10px;
+    }
+} 
+/* background css*/
+.bg{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    &:before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $black;
+        opacity: .85;
+        z-index: -1;
+    }
+} 
+/* button css */
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: $white;
+    border-radius: 3px;
+    &.btn-box{
+        background-color: $primary_color;
+        transition: .3s;
+        &:hover{
+            color: $black;
+        }
+    }
+} 
+/* text align */
+$align: left, right, center, justify;
+@each $var in $align {
+    .text-#{$var}{
+        text-align: $var;
+    }
+} 
+/* flex property */
+$flex: flex, flex-inline;
+@each $var in $flex {
+    .d-#{$var}{
+        display: $var;
+    }
+} 
+$justify: start, center, end, space-around, space-between, space-evenly;
+@each $var in $justify{
+    .justify-#{$var}{
+        justify-content: $var;
+    }
+}
+$align: start, center, end, space-around, space-between, space-evenly;
+@each $var in $align {
+    .align-#{$var}{
+        align-items: $var;
+    }
+}
+
+/* scroll bar */ 
+.scroll-bar {
+	position: fixed;
+	background: #ff6f6f;
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	line-height: 50px;
+	text-align: center;
+	right: 25px;
+	bottom: 25px;
+	z-index: 99;
+}
+/* end scroll bar */ 

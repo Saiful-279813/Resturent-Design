@@ -1,0 +1,30 @@
+/* bradcumb part */ 
+.bradcumb-area{
+    padding: 150px 0px 50px;
+    @include min-sm{
+        padding: 50px 0px;
+    }
+    h4{
+        font-size: 40px;
+        text-transform: capitalize;
+        color: #fff;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+    ul{
+        li{
+            color: #fff;
+            display: inline-block;
+            margin-right: 10px;
+            text-transform: capitalize;
+            a{
+                color: #fff;
+                text-transform: capitalize;
+                transition: all ease .3s;
+                &:hover{
+                    color: $primary-color;
+                }   
+            }
+        }
+    }
+}

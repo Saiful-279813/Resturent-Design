@@ -1,0 +1,37 @@
+.gellary-area{
+    .single-gellary{
+        position: relative;
+        margin-bottom: 30px;
+        &:before{
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $black;
+            transition: all ease .3s;
+        }
+        &:after{
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background-color: $black;
+            transition: all ease .3s;
+        }
+        &:hover{
+            &:before{
+                width: 50%;
+            }
+            &:after{
+                width: 50%;
+            }
+        }
+        img{
+            min-height: 400px;
+        }
+    }
+}

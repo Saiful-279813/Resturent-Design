@@ -1,0 +1,105 @@
+/* banner part */
+.banner-area{
+    .slick-arrow{
+        @include min-sm{
+            width: 30px;
+            height: 30px;
+        }
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $primary-color;
+        border: 0px;
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+        cursor: pointer;
+        transition: all ease .3s;
+        i{
+            @include min-sm{
+                font-size: 16px;
+            }
+            font-size: 20px;
+            color: #fff;
+        }
+        &:hover{
+            background-color: $black;
+        }
+        &.slick-next{
+            @include min-sm{
+                right: 15px;
+            }
+            right: 50px;
+        }
+        &.slick-prev{
+            left: 50px;
+            @include min-sm{
+                left: 15px;
+            }
+        }
+    }
+    .single-banner{
+        @include min-md{
+            height: 70vh;
+        }
+        @include min-sm{
+            height: 50vh
+        }
+        position: relative;
+        height: 100vh;
+        .banner-content{
+            @include min-md{
+                height: 70vh;
+            }
+            @include min-sm{
+                height: 50vh
+            }
+            height: 100vh;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h5{
+                @include min-md{
+                    font-size: 24px;
+                }
+                font-size: 30px;
+            }
+            h2{
+                @include min-md{
+                    font-size: 40px;
+                    margin: 15px 0px;
+                    line-height: 40px;
+                }
+                @include min-sm{
+                    font-size: 40px;
+                    margin: 15px 0px;
+                    line-height: 40px;
+                }
+                font-size: 60px;
+                margin: 30px 0px;
+                text-transform: capitalize;
+                font-weight: 800;
+                text-align: center;
+                line-height: 70px;
+            }
+            .banner-btn{
+                @include min-md{
+                    margin-top: 20px;
+                }
+                a{
+                    @include min-md{
+                        font-size: 16px;
+                        padding: 10px 20px;
+                    }
+                    margin: 0px 10px;
+                    &:hover{
+                        background-color: $black;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+} 

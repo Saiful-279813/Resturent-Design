@@ -1,0 +1,40 @@
+/* bottom cta part */
+.bottom-cta-part{
+    padding: 50px 0px;
+    background-color: #ff3636;
+    color: #fff;
+    @include min-sm{
+        padding: 30px;
+    }
+    h2{
+        @include min-lg{
+            font-size: 38px;
+        }
+        @include min-md{
+            font-size: 38px;
+        }
+        @include min-sm{
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        text-align: right;
+        font-size: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    a{
+        @include min-sm{
+            text-align: center;
+        }
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        margin: 8px 0px;
+        i{
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+} 

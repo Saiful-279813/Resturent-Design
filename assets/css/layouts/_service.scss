@@ -1,0 +1,49 @@
+/* service part */
+.service-area{
+    @include min-md{
+        padding: 70px 0px 40px;
+    }
+    @include min-sm{
+        padding: 50px 0px 20px;
+    }
+    .single-service{
+        text-align: center;
+        border: 1px solid $gray;
+        margin-bottom: 30px;
+        padding: 40px 20px;
+        position: relative;
+        &:hover{
+            h4:after, h4:before{
+                width: 100%;
+            }
+        }
+        img{
+            width: 50px;
+        }
+        h4{
+            margin: 15px 0px;
+            @include min-lg{
+                font-size: 22px;
+            }
+            &:after, &::before{
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 5px;
+                background-color: #ff3636;
+                transition: all ease 0.3s;
+            }
+            &:after{
+                top: 0;
+                left: 0;
+            }
+            &:before{
+                bottom: 0;
+                right: 0;
+            }
+        }
+        p{
+
+        }
+    }
+} 
